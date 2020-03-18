@@ -1,0 +1,18 @@
+{
+  "name": "hoavien",
+  "version": "1.0.0",
+  "description": "Devcamper backend API",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=producction node index",
+    "dev": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Winn",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
