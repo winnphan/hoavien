@@ -14,11 +14,5 @@
   "bugs": {
     "url": "https://github.com/winnphan/hoavien/issues"
   },
-  "homepage": "https://github.com/winnphan/hoavien#readme",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.9.7",
-    "morgan": "^1.10.0"
-  }
+  "homepage": "https://github.com/winnphan/hoavien#readme"
 }
