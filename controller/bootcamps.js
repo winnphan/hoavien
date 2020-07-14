@@ -62,7 +62,7 @@ exports.updateBootcamp = asyncHandler(async (req, res, next) => {
 
     // Make sure user is bootcamp owner
     if (bootcamp.user.toString() !== req.user.id && req.user.role !== 'admin') {
-        return next(new ErrorResponse(`User $(req.params.id) is not authorized to update this bootcamp`, 404));
+        return next(new ErrorResponse(`User ${req.params.id} is not authorized to update this bootcamp`, 404));
     }
 
     bootcamp = await Bootcamp.findOneAndUpdate(req.params.id, req.body, {
@@ -86,7 +86,7 @@ exports.deleteBootcamp = asyncHandler(async (req, res, next) => {
 
     // Make sure user is bootcamp owner
     if (bootcamp.user.toString() !== req.user.id && req.user.role !== 'admin') {
-        return next(new ErrorResponse(`User $(req.params.id) is not authorized to delete this bootcamp`, 404));
+        return next(new ErrorResponse(`User ${req.params.id} is not authorized to delete this bootcamp`, 404));
     }
 
     bootcamp.remove();
