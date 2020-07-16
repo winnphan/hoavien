@@ -1,6 +1,7 @@
 const path = require('path'),
     ErrorResponse = require('../utils/errorRespone'),
     asyncHandler = require('../middleware/async'),
+    sendMail = require('../utils/sendEmail'),
     User = require('../models/User');
 
 // @desc        Register user
