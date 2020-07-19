@@ -7,14 +7,15 @@ const express = require('express'),
         deleteBootcamp,
         getBootcampsInRadius,
         bootcampPhotoUpload
-    } = require('../controller/bootcamps'),
-    router = express.Router();
+    } = require('../controller/bootcamps');
 const Bootcamp = require('../models/Bootcamps');
-const advancedResults = require('../middleware/advancedResults');
 
 // Include other resource routes
 const courseRouter = require('./courses');
 
+const router = express.Router();
+
+const advancedResults = require('../middleware/advancedResults');
 const { protect, authorize } = require('../middleware/auth');
 
 // Re-route into other resource routers
