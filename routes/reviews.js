@@ -1,6 +1,7 @@
 const express = require('express'),
     {
         getReviews,
+        getReview
     } = require('../controller/review'),
     Review = require('../models/Review'),
     router = express.Router({mergeParams: true}),
@@ -17,5 +18,8 @@ router
         }),
         getReviews
     );
+
+router
+    .route('/:id').get(getReview);
 
 module.exports = router;
